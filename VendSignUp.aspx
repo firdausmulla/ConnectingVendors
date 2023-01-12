@@ -1,17 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SignUp.aspx.cs" Inherits="SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="VendSignUp.aspx.cs" Inherits="VendSignUp" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Connecting Vendors</title>
+    <title>Vendors Registration</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         body {
             color: #fff;
-            background: #D872DD;
+            background: #000000;
             font-family: 'Roboto', sans-serif;
         }
 
@@ -31,8 +31,8 @@
         }
 
         .signup-form {
-            width: 390px;
-            margin: 30px auto;
+            width: 690px;
+            margin: 40px auto;
         }
 
             .signup-form form {
@@ -55,19 +55,19 @@
             }
 
             .signup-form .form-group {
-                margin-bottom: 20px;
+                margin-bottom: 30px;
             }
 
             .signup-form input[type="checkbox"] {
-                margin-top: 3px;
+                margin-top: 5px;
             }
 
             .signup-form .row div:first-child {
-                padding-right: 10px;
+                padding-right: 20px;
             }
 
             .signup-form .row div:last-child {
-                padding-left: 10px;
+                padding-left: 20px;
             }
 
             .signup-form .btn {
@@ -102,7 +102,7 @@
                 }
 
             .signup-form .hint-text {
-                padding-bottom: 15px;
+                padding-bottom: 25px;
                 text-align: center;
             }
     </style>
@@ -110,19 +110,78 @@
 <body>
     <div class="signup-form">
         <form id="form1" runat="server">
-            <h2>Sign Up</h2>
-            <p>To create your account</p>
+            <h2>Register Your Shop</h2>
+            <p>And Become our Member Vendor!</p>
             <hr>
-
+            <p style="color:red;"><b>Shop Details</b></p>
             <div class="form-group">
-                <input type="text" class="form-control" name="fname" placeholder="Name" required="required">
+                <div class="row">
+                    <div class="col-xs-6"><input type="text" class="form-control" name="sname" placeholder="Shop Name" required="required"></div>
+                    <div class="col-xs-6"><input type="text" class="form-control" name="scatg" placeholder="Shop Category" required="required"></div>
+                </div>
             </div>
 
             <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email-Id" required="required">
+                <input type="email" class="form-control" name="s_email" placeholder="Email-Id" required="required">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="addr" placeholder="Address" required="required">
+                <input type="text" class="form-control" name="s_addr" placeholder="Address" required="required">
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+
+                    <select class="select">
+                        <option value="1">State</option>
+                        <option value="2">Maharashtra</option>
+                        <option value="3">Goa</option>
+                        <option value="4">Punjab</option>
+                        <option value="5">Gujarat</option>
+                    </select>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                    <select class="select">
+                        <option value="1">City</option>
+                        <option value="2">Mumbai</option>
+                        <option value="3">Pune</option>
+                        <option value="4">Banglore</option>
+                        <option value="5">Surat</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <p> <b>Contact Details: </b></p>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-6"><input type="number" class="form-control" name="s_num1" placeholder="Phone No.1" required="required"></div>
+                        <div class="col-xs-6"><input type="number" class="form-control" name="s_num2" placeholder="Phone No.2"></div>
+                    </div>
+                </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="shrs" placeholder="Active Hours" required="required">
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4"><p> Do You Provide Delivery?</p></div>
+                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox">Yes</label></div>
+                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox">No</label></div>
+                    </div>
+                </div>
+
+            <hr>
+            <p style="color:red;"><b>Personal Details</b></p>
+            <div class="form-group">
+                <input type="text" class="form-control" name="vend_name" placeholder="Name" required="required">
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" name="vend_email" placeholder="Email-Id" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="vend_addr" placeholder="Address" required="required">
             </div>
             
             <div class="row">
@@ -152,17 +211,17 @@
             <p> <b>Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-xs-6"><input type="number" class="form-control" name="num1" placeholder="Phone No.1" required="required"></div>
-                        <div class="col-xs-6"><input type="number" class="form-control" name="num2" placeholder="Phone No.2"></div>
+                        <div class="col-xs-6"><input type="number" class="form-control" name="vend_num1" placeholder="Phone No.1" required="required"></div>
+                        <div class="col-xs-6"><input type="number" class="form-control" name="vend_num2" placeholder="Phone No.2"></div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" name="uname" placeholder="Create Username" required="required">
+                    <input type="text" class="form-control" name="vend_name" placeholder="Create Username" required="required">
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Create Password" required="required">
+                    <input type="password" class="form-control" name="vend_password" placeholder="Create Password" required="required">
                 </div>
 
                 <div class="form-group">
@@ -175,7 +234,7 @@
                     </center>
                 </div>
 </form>
-        <div class="hint-text">Already have an account? <br><a href="ULogin.aspx">Login</a>
+        <div class="hint-text">Already have an account? <br><a href="VendLogin.aspx">Login</a>
         </div>
     </div>
 </body>
