@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" runat="server">
 <head>
     <meta charset="utf-8">
     <title>Connecting Vendors Login</title>
