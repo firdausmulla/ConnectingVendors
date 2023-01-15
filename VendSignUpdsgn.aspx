@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="VendSignUp.aspx.cs" Inherits="VendSignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="VendSignUpdsgn.aspx.cs" Inherits="VendSignUp" %>
 
 <!DOCTYPE html>
 <html lang="en" runat="server">
@@ -124,6 +124,7 @@
             <div class="form-group">
                 <input type="email" class="form-control" name="s_email" placeholder="Email-Id" required="required">
             </div>
+            
             <div class="form-group">
                 <input type="text" class="form-control" name="s_addr" placeholder="Address" required="required">
             </div>

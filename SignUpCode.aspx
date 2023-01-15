@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <title>Connecting Vendors</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
     <style>
         body {
@@ -110,7 +109,7 @@
                 <br/>
                 <div class="row">
                     <div class="col-md-6 mb-4">
-                        <asp:DropDownList ID="StateList" runat="server">
+                        <asp:DropDownList ID="StateList" runat="server" required="required">
                             <asp:ListItem Text="State" Value="State" />
                             <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
                             <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
@@ -145,7 +144,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="col-md-6 mb-4">
-                        <asp:DropDownList ID="CityList" runat="server">
+                        <asp:DropDownList ID="CityList" runat="server" required="required">
                             <asp:ListItem Text="City" Value="City" />
                                 <asp:ListItem Text="Mumbai" Value="Mumbai" />
                         </asp:DropDownList>
@@ -155,7 +154,7 @@
                 
                 <b>Contact Details: </b>
                     <div class="row">
-                        <div class="col-xs-6"><asp:TextBox ID="txtNum1" runat="server" CssClass="form-control" placeholder="Phone No.1" TextMode="Number"></asp:TextBox></div>
+                        <div class="col-xs-6"><asp:TextBox ID="txtNum1" runat="server" CssClass="form-control" placeholder="Phone No.1" TextMode="Number" required="required"></asp:TextBox></div>
                         <div class="col-xs-6"><asp:TextBox ID="txtNum2" runat="server" CssClass="form-control" placeholder="Phone No.2" TextMode="Number"></asp:TextBox></div>
                     </div>
                 <br/>
