@@ -1,17 +1,17 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ULogin.aspx.cs" Inherits="ULogin" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="VendLogin.aspx.vb" Inherits="VendLogin" %>
 
 <!DOCTYPE html>
 
 <html lang="en" runat="server">
 <head>
     <meta charset="utf-8">
-    <title>Connecting Vendors Login</title>
+    <title>Connecting Vendors, Vendors Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
     <style>
         body {
             color: #fff;
-            background: #D872DD;
+            background: #000000;
             font-family: 'Roboto', sans-serif;
         }
         .form-control {
@@ -123,7 +123,7 @@
     <div class="ulogin-form">
         <form id="form1" runat="server">
             <h2>Login</h2>
-            <p>Sign into your account</p>
+            <p>To Enter Your Shop!</p>
             <hr>
 
             <div class="form-group">
@@ -143,8 +143,9 @@
                     </center>
             </div>
         </form>
-            <div class="hint-text">Don't have an account? <br><a href="SignUpdsgn.aspx">Sign Up</a>
+            <div class="hint-text">Don't have a shop register ? <br><a href="VendSignUpdsgn.aspx">Register Here</a>
         </div>
     </div>
 </body>
 </html>
+

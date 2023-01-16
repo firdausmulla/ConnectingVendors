@@ -134,10 +134,36 @@
 
                     <select class="select">
                         <option value="1">State</option>
-                        <option value="2">Maharashtra</option>
-                        <option value="3">Goa</option>
-                        <option value="4">Punjab</option>
-                        <option value="5">Gujarat</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option> 
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
                     </select>
 
                 </div>
@@ -153,7 +179,7 @@
                 </div>
             </div>
             <br>
-            <p> <b>Contact Details: </b></p>
+            <p> <b>Shop Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-6"><input type="number" class="form-control" name="s_num1" placeholder="Phone No.1" required="required"></div>
@@ -161,7 +187,12 @@
                     </div>
                 </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="shrs" placeholder="Active Hours" required="required">
+                 <div class="row">
+                     <div class="col-xs-4"><p>Active Hours </p></div>
+                     <div class="col-xs-4"><input type="text" class="form-control" name="fromhrs" placeholder="From: " required="required"></div>
+                     <div class="col-xs-4"><input type="text" class="form-control" name="tohrs" placeholder="To: " required="required"></div>
+                 </div>
+                     
             </div>
 
             <div class="row">
@@ -175,14 +206,14 @@
             <hr>
             <p style="color:red;"><b>Personal Details</b></p>
             <div class="form-group">
-                <input type="text" class="form-control" name="vend_name" placeholder="Name" required="required">
+                <input type="text" class="form-control" name="vend_name" placeholder="Your Name" required="required">
             </div>
 
             <div class="form-group">
-                <input type="email" class="form-control" name="vend_email" placeholder="Email-Id" required="required">
+                <input type="email" class="form-control" name="vend_email" placeholder="Your Email-Id" required="required">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="vend_addr" placeholder="Address" required="required">
+                <input type="text" class="form-control" name="vend_addr" placeholder="Residential Address">
             </div>
             
             <div class="row">
@@ -190,10 +221,36 @@
 
                     <select class="select">
                         <option value="1">State</option>
-                        <option value="2">Maharashtra</option>
-                        <option value="3">Goa</option>
-                        <option value="4">Punjab</option>
-                        <option value="5">Gujarat</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option> 
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
                     </select>
 
                 </div>
@@ -209,7 +266,7 @@
                 </div>
             </div>
                <br>
-            <p> <b>Contact Details: </b></p>
+            <p> <b>Your Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-6"><input type="number" class="form-control" name="vend_num1" placeholder="Phone No.1" required="required"></div>
@@ -218,11 +275,11 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" name="vend_name" placeholder="Create Username" required="required">
+                    <input type="text" class="form-control" name="vend_uname" placeholder="Create Username" required="required">
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" name="vend_password" placeholder="Create Password" required="required">
+                    <input type="password" title="Password" class="form-control" name="vend_password" ToolTip="Password must contain: Minimum 8 characters at-least 1 Alphabet and 1 Number" placeholder="Create Password" required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                 </div>
 
                 <div class="form-group">

@@ -11,7 +11,7 @@
     <style>
         body {
             color: #fff;
-            background: #D872DD;
+            background: #2389cd;
             font-family: 'Roboto', sans-serif;
         }
 
@@ -130,10 +130,36 @@
 
                     <select class="select">
                         <option value="1">State</option>
-                        <option value="2">Maharashtra</option>
-                        <option value="3">Goa</option>
-                        <option value="4">Punjab</option>
-                        <option value="5">Gujarat</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option> 
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
                     </select>
 
                 </div>
@@ -159,10 +185,12 @@
 
                 <div class="form-group">
                     <input type="text" class="form-control" name="uname" placeholder="Create Username" required="required">
+
+                   
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Create Password" required="required">
+                    <input type="password" title="Password" class="form-control" name="password" ToolTip="Password must contain: Minimum 8 characters at-least 1 Alphabet and 1 Number" placeholder="Create Password" required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                 </div>
 
                 <div class="form-group">

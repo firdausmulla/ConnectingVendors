@@ -163,7 +163,7 @@
                 </div>
                 <br/>
 
-                <b>Your Contact Details: </b>
+                <b>Shop Contact Details: </b>
                     <div class="row">
                         <div class="col-xs-6"><asp:TextBox ID="txtSnum1" runat="server" CssClass="form-control" placeholder="Phone No.1" TextMode="Number" required="required" />
                         </div>
@@ -250,7 +250,7 @@
                 </div>
                 <br/>
 
-                <b>Contact Details: </b>
+                <b>Your Contact Details: </b>
                     <div class="row">
                         <div class="col-xs-6"><asp:TextBox ID="txtVendnum1" runat="server" CssClass="form-control" placeholder="Phone No.1" TextMode="Number" required="required" />
                         </div>
