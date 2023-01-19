@@ -279,13 +279,26 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="password" title="Password" class="form-control" name="vend_password" ToolTip="Password must contain: Minimum 8 characters at-least 1 Alphabet and 1 Number" placeholder="Create Password" required="required" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                    <input type="password" class="form-control" name="vend_password" placeholder="Create Password" id="password" required="required">
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" id="confirm_password" required="required">
                 </div>
+            <script>var password = document.getElementById("password")
+                        , confirm_password = document.getElementById("confirm_password");
 
+                    function validatePassword() {
+                        if (password.value != confirm_password.value) {
+                            confirm_password.setCustomValidity("Passwords Don't Match");
+                        } else {
+                            confirm_password.setCustomValidity('');
+                        }
+                    }
+
+                    password.onchange = validatePassword;
+                    confirm_password.onkeyup = validatePassword;
+            </script>
                 <div class="form-group">
                     <center>
                         <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>

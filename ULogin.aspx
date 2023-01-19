@@ -131,7 +131,7 @@
             </div>
 
             <div class="form-group">
-                    <input type="password" class="form-control" name="password" ToolTip="Password must contain: Minimum 8 characters at-least 1 Alphabet and 1 Number" placeholder="Enter Password" required="required">
+                    <input type="password" class="form-control" name="password" placeholder="Enter Password" id="password" required="required">
                 </div>
 
             <div class="hint-text">Forgot Password? <a href="ForgetPassword">Click Here</a>
