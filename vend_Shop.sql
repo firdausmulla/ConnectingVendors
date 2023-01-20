@@ -37,3 +37,16 @@ create table ShopItems(
 PRIMARY KEY (ItemID),
 FOREIGN KEY (ShopID) REFERENCES Shop(ShopID)
 )
+
+create table Users(
+[UID] INT NOT NULL UNIQUE,
+[Name] VARCHAR(50) NOT NULL,
+[Email-Id] VARCHAR(100) NOT NULL UNIQUE,
+[Address] VARCHAR(100) NULL,
+[Contact_one] VARCHAR(50) NULL,
+[Contact_two] VARCHAR(50) NULL,
+[Username] VARCHAR(50) NOT NULL UNIQUE,
+[Password] VARCHAR(50) NOT NULL,
+PRIMARY KEY (UID)
+)
+

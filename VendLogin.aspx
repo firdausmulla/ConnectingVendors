@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="VendLogin.aspx.vb" Inherits="VendLogin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="VendLogin.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html>
 

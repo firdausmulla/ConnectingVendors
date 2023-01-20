@@ -109,7 +109,7 @@
 </head>
 <body>
     <div class="signup-form">
-        <form id="form1" runat="server">
+        <form id="form1" action="WelcomeUser.html" method="post" runat="server">
             <h2>Sign Up</h2>
             <p>To create your account</p>
             <hr>
@@ -211,10 +211,10 @@
                     password.onchange = validatePassword;
                     confirm_password.onkeyup = validatePassword;
                 </script>
-
+            
                 <div class="form-group">
                     <center>
-                        <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                        <button type="submit" name="form_submitted" class="btn btn-primary btn-lg">Sign Up</button>
                     </center>
                 </div>
 </form>
