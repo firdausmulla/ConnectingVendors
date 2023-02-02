@@ -21,16 +21,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ConnectingVendors", ".", "{
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "50591"
+		SlnRelativePath = "..\ConnectingVendors\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1575199D-A2AB-4FFA-AF9A-D5B9EC28FCFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1575199D-A2AB-4FFA-AF9A-D5B9EC28FCFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1575199D-A2AB-4FFA-AF9A-D5B9EC28FCFF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1575199D-A2AB-4FFA-AF9A-D5B9EC28FCFF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

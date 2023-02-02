@@ -1,4 +1,4 @@
-create table Vendors(
+﻿create table Vendors(
 [VendID] INT NOT NULL UNIQUE,
 [Vendor Name] VARCHAR(50) NULL,
 [Email-Id] VARCHAR(100) NOT NULL UNIQUE,
@@ -12,8 +12,8 @@ PRIMARY KEY (VendID)
 create table Shop(
 [ShopID] INT NOT NULL UNIQUE,
 [VendID] INT NOT NULL UNIQUE,
-[Shop Name] VARCHAR(50) NULL,
-[Vendor Name] VARCHAR(50) NULL,
+[ShopName] VARCHAR(50) NULL,
+[VendorName] VARCHAR(50) NULL,
 [Shop Category] VARCHAR(50) NULL,
 [Email-Id] VARCHAR(100) NOT NULL,
 [Address] VARCHAR(100) NULL,

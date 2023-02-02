@@ -113,10 +113,12 @@
             <h2>Register Your Shop</h2>
             <p>And Become our Member Vendor!</p>
             <hr>
+
+             <!----Shop Detail  ----->
             <p style="color:red;"><b>Shop Details</b></p>
             <div class="form-group">
                 <div class="row">
-                    <div class="col-xs-6"><input type="text" class="form-control" name="sname" placeholder="Shop Name" required="required"></div>
+                    <div class="col-xs-6"><input type="text" ID="txtsname" class="form-control" name="sname" placeholder="Shop Name" required="required"></div>
                     <div class="col-xs-6"><input type="text" class="form-control" name="scatg" placeholder="Shop Category" required="required"></div>
                 </div>
             </div>
@@ -133,8 +135,8 @@
                 <div class="col-md-6 mb-4">
 
                     <select class="select">
-                        <option value="1">State</option>
-                        <option value="Andhra Pradesh">Andhra Pradesh</option> 
+                        <option value="1" name="s_state">State</option>
+                        <option value="Andhra Pradesh" name="s_state">Andhra Pradesh</option> 
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                         <option value="Assam">Assam</option>
                         <option value="Bihar">Bihar</option>
@@ -170,8 +172,8 @@
                 <div class="col-md-6 mb-4">
 
                     <select class="select">
-                        <option value="1">City</option>
-                        <option value="2">Mumbai</option>
+                        <option value="1" name="s_city">City</option>
+                        <option value="2" name="s_city">Mumbai</option>
                         <option value="3">Pune</option>
                         <option value="4">Banglore</option>
                         <option value="5">Surat</option>
@@ -203,6 +205,7 @@
                     </div>
                 </div>
 
+            <!----Vendors Detail  ----->
             <hr>
             <p style="color:red;"><b>Personal Details</b></p>
             <div class="form-group">
@@ -220,10 +223,10 @@
                 <div class="col-md-6 mb-4">
 
                     <select class="select">
-                        <option value="1">State</option>
+                        <option value="1" name="v_state">State</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option> 
                             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                            <option value="Assam">Assam</option>
+                            <option value="Assam" name="v_state">Assam</option>
                             <option value="Bihar">Bihar</option>
                             <option value="Chhattisgarh">Chhattisgarh</option>
                             <option value="Rajasthan">Rajasthan</option>
@@ -257,8 +260,8 @@
                 <div class="col-md-6 mb-4">
 
                     <select class="select">
-                        <option value="1">City</option>
-                        <option value="2">Mumbai</option>
+                        <option value="1" name="v_city">City</option>
+                        <option value="2" name="v_city">Mumbai</option>
                         <option value="3">Pune</option>
                         <option value="4">Banglore</option>
                         <option value="5">Surat</option>
@@ -269,7 +272,7 @@
             <p> <b>Your Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-xs-6"><input type="number" class="form-control" name="vend_num1" placeholder="Phone No.1" required="required"></div>
+                        <div class="col-xs-6"><input type="number" class="form-control" name="vend_num1" placeholder="Phone No.1" required="required" aria-atomic="True" aria-autocomplete="both"></div>
                         <div class="col-xs-6"><input type="number" class="form-control" name="vend_num2" placeholder="Phone No.2"></div>
                     </div>
                 </div>
@@ -301,7 +304,7 @@
             </script>
                 <div class="form-group">
                     <center>
-                        <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                        <button type="submit" ID="VendSignup" name="VendSignup" class="btn btn-primary btn-lg">Sign Up</button>
                     </center>
                 </div>
 </form>
