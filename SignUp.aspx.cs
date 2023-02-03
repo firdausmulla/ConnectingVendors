@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Runtime.Remoting.Contexts;
 using System.Configuration;
+using System.Web.Services;
 
 public partial class SignUp : System.Web.UI.Page
 {
@@ -29,6 +30,8 @@ public partial class SignUp : System.Web.UI.Page
         public string uname;
         public string upwd;
     }
+
+    [WebMethod]
     public static string InsertRecord(string username, string useremail, string useraddr, string userstate, string usercity, string userpno1, string userpno2, string useruname, string userpwd)
     {
         SqlConnection con = new SqlConnection(connectionstring);
@@ -40,26 +43,6 @@ public partial class SignUp : System.Web.UI.Page
         cmd.Dispose();
         con.Close();
         return result.ToString();
-        
-
-        /*SqlConnection con = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
-        //SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\mulla\\OneDrive\\Documents\\connectingvendors.mdf;Integrated Security=True;Connect Timeout=30");
-        string fname, email, addr, uname, upwd;
-        fname = Request.Form["fname"];
-        email = Request.Form["email"];
-        addr = Request.Form["addr"];
-        uname = Request.Form["uname"];
-        upwd = Request.Form["password"];
-        int cnt1, cnt2;
-        cnt1 = Convert.ToInt32(Request.Form["num1"]);
-        cnt2 = Convert.ToInt32(Request.Form["num2"]);
-
-        SqlCommand cmd = new SqlCommand("insert into Users(Name, Email-Id, Address, Contact_one, Contact_two, Username, Password) " +
-            "values('" + fname + "', '" + email + "', '" + addr + "', '" + cnt1 + "', '" + cnt2 + "', '" + uname + "', '" + upwd + "')", con);
-        con.Open();
-        con.Close();
-
-        Response.Redirect("Website.html"); */
 
     }
 }

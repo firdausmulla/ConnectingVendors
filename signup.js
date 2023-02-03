@@ -1,14 +1,14 @@
 ﻿$(document).ready(function () {
     $("#UserSignup").click(function () {
-        var UserName = $('#fname').val()
-        var UserEmail = $('#email').val()
-        var UserAddr = $('#addr').val()
-        var UserState = $('#ustate').val()
-        var UserCity = $('#ucity').val()
-        var UserPno1 = $('#pno1').val()
-        var UserPno2 = $('#pno2').val()
-        var UserUname = $('#uname').val()
-        var UserPwd = $('#password').val()
+        var UserName = $('#fname').val();
+        var UserEmail = $('#email').val();
+        var UserAddr = $('#addr').val();
+        var UserState = $('#ustate').val();
+        var UserCity = $('#ucity').val();
+        var UserPno1 = $('#pno1').val();
+        var UserPno2 = $('#pno2').val();
+        var UserUname = $('#uname').val();
+        var UserPwd = $('#password').val();
 
         var obj = {};
         obj.username = UserName;
