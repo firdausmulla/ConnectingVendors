@@ -171,10 +171,40 @@
                     <!----City---->
                     <select class="select" runat="server" id="ucity">
                         <option value="1">City</option>
-                        <option value="2">Mumbai</option>
-                        <option value="3">Pune</option>
-                        <option value="4">Banglore</option>
-                        <option value="5">Surat</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Ahemdabad">Ahemdabad</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Baroda">Baroda</option>
+                        <option value="Banaras">Banaras</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Coorg">Coorg</option>
+                        <option value="Darjeeling">Darjeeling</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Guwahati">Guwahati</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Jhansi">Jhansi</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Kasauli">Kasauli</option>
+                        <option value="Kolkatta">Kolkata</option>
+                        <option value="Delhi">Kota</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Ooty">Ooty</option>
+                        <option value="Palghar">Palghar</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Ranchi">Ranchi</option>
+                        <option value="Ratnagiri">Ratnagiri</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Tirupati">Tirupati</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        
                     </select>
                 </div>
             </div>

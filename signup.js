@@ -22,7 +22,7 @@
         obj.userpwd = UserPwd;
 
         if (UserName.value == "" || UserEmail.value == "" || UserAddr == "" || UserState == "" || UserCity == "" || UserPno1 == "" || UserUname == "" || UserPwd == "") {
-            alert("Please enter your details")
+            alert("Please fill all the details")
             return false;
         }
         else {
