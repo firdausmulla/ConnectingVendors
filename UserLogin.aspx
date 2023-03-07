@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Connecting Vendors Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/Login.js"></script>
      <!---- CSS Style ------>
     <style>
         body {
@@ -112,17 +114,17 @@
 </head>
 <body>
     <div class="ulogin-form">
-        <form id="form1"  method="post" runat="server">
+        <form id="form1"  method="post" runat="server" action="Website.html">
             <h2>Login</h2>
             <p>Sign into your account</p>
             <hr />
 
             <div class="form-group">
-                <input type="text" class="form-control" name="uname" placeholder="Enter Email-Id or Username" required="required" />
+                <input type="text" class="form-control" id="uname" placeholder="Enter Email-Id or Username" required="required" />
             </div>
 
             <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Enter Password" id="password" required="required" />
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" required="required" />
                 </div>
 
             <div class="hint-text">Forgot Password? <a href="ForgetPassword">Click Here</a>
@@ -130,7 +132,7 @@
 
             <div class="form-group">
                     <center>
-                        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        <button type="button" id="UserLogin" class="btn btn-primary btn-lg">Login</button>
                     </center>
             </div>
         </form>

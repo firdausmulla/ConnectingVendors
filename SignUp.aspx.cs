@@ -35,7 +35,7 @@ public partial class SignUp : System.Web.UI.Page
     public static string InsertRecord(string username, string useremail, string useraddr, string userstate, string usercity, string userpno1, string userpno2, string useruname, string userpwd)
     {
         SqlConnection con = new SqlConnection(connectionstring);
-         SqlCommand cmd = new SqlCommand("insert into Users(Name, EmailId, Address, State, City, Contact_one, Contact_two, Username, Password) " +
+        SqlCommand cmd = new SqlCommand("insert into Users(Name, EmailId, Address, State, City, Contact_one, Contact_two, Username, Password) " +
              "values('"+ username + "', '"+useremail+"', '"+useraddr+"', '"+userstate+"', '"+usercity+"', '"+userpno1+"', '"+userpno2+"', '"+useruname+"', '"+userpwd+"')", con);
         cmd.CommandType = CommandType.Text; 
         con.Open();
