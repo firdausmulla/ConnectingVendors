@@ -35,8 +35,6 @@ img {
     }
 }
 
-
-
 /* HEADER */
 .logob {
     width: 70px;
@@ -73,7 +71,6 @@ nav {
     align-items: center;
 }
 
-
 .align-center {
     display: flex;
     align-items: center;
@@ -85,11 +82,9 @@ nav {
         padding: 16px 0;
     }
 
-
     .icons {
         display: none;
     }
-
 
     .logob {
         width: 100px;
@@ -97,7 +92,6 @@ nav {
         cursor: pointer;
     }
 }
-
 
 /* Intro */
 .intro {
@@ -116,7 +110,6 @@ nav {
 .intro-content {
     height: 100%;
 }
-
 
 .intro h1 {
     margin-top: 80px;
@@ -171,6 +164,7 @@ nav {
     .benefit .text {
         font-size: 24px;
         color: #777;
+        text-align:center;
     }
 
 /* New Arrivals */
@@ -394,7 +388,6 @@ nav {
             #footer ul li a:hover {
                 color: #ff4321;
             }
-
 
 .social-links {
     margin-left: 8%;
