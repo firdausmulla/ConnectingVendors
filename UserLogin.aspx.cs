@@ -10,7 +10,6 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 
 public partial class UserLogin : System.Web.UI.Page
@@ -19,17 +18,19 @@ public partial class UserLogin : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-    }
-    
+    }    
     [WebMethod]
-    public static string LoginRecord(string useruname, string userpwd) 
+    public static string LoginRecord(string useruname, string userpwd)
     {
         SqlConnection con = new SqlConnection(connectionstring);
-        SqlCommand cmd = new SqlCommand("IF EXISTS (SELECT * FROM Users WHERE Username='"+ useruname + "' AND Password= '"+ userpwd + "')", con );
-        cmd.CommandType = CommandType.Text;
+        SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE Username=@Username AND Password=@Password", con);
+        cmd.Parameters.AddWithValue("@Username", useruname);
+        cmd.Parameters.AddWithValue("@Password", userpwd);
         con.Open();
-        int result = cmd.ExecuteNonQuery();
+        SqlDataReader reader = cmd.ExecuteReader();
+        bool success = reader.Read();
+        string userprofile = success ? reader.GetString(reader.GetOrdinal("Profile")) : "";
         con.Close();
-        return result.ToString();
+        return "{ \"success\": " + success.ToString().ToLower() + ", \"userprofile\": \"" + userprofile + "\" }";
     }
 }

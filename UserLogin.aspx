@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/Login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Login.js"></script>
      <!---- CSS Style ------>
     <style>
         body {
@@ -114,7 +115,7 @@
 </head>
 <body>
     <div class="ulogin-form">
-        <form id="form1"  method="post" runat="server" action="Website.html">
+        <form id="form1"  method="post" runat="server">
             <h2>Login</h2>
             <p>Sign into your account</p>
             <hr />
@@ -136,7 +137,7 @@
                     </center>
             </div>
         </form>
-            <div class="hint-text">Don't have an account? <br /><a href="SignUpdsgn.aspx">Sign Up</a>
+            <div class="hint-text">Don't have an account? <br /><a href="SignUp.aspx">Sign Up</a>
         </div>
     </div>
 </body>

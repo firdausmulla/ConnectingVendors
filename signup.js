@@ -36,6 +36,7 @@
                     // Registration Success
                     if (data.d == '1') {
                         alert("Registered Successfully!")
+                        window.location.href = "Home.aspx?username=" + obj.useruname;
                     }
                     else {
                         alert("Registration Unsuccessful, Please try again.")
