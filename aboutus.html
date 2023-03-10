@@ -3,11 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
         html {
             box-sizing: border-box;
         }
@@ -15,7 +10,75 @@
         *, *:before, *:after {
             box-sizing: inherit;
         }
+        body {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            color: black;
+            background-color: whitesmoke;
+        }
 
+        img {
+            max-width: 100%;
+        }
+
+
+        /* HEADER */
+        .logob {
+            width: 70px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+        nav {
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            nav ul li {
+                display: inline-block;
+                list-style: none;
+                margin: 10px 20px;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #606163;
+                }
+
+                    nav ul li a:hover {
+                        color: #ff4321;
+                    }
+
+        .d {
+            display: flex;
+            align-items: center;
+        }
+
+        .align-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                padding: 16px 0;
+            }
+
+            .icons {
+                display: none;
+            }
+
+            .logob {
+                width: 100px;
+                height: 80px;
+                cursor: pointer;
+            }
+        }
         .column {
             float: left;
             width: 33.3%;
@@ -31,12 +94,13 @@
         .about-section {
             padding: 50px;
             text-align: center;
-            background-color: #474e5d;
+            background-color: #95A9EE;
             color: white;
         }
 
         .container {
             padding: 0 16px;
+            font-size: 15px;
         }
 
             .container::after, .row::after {
@@ -46,7 +110,7 @@
             }
 
         .title {
-            color: grey;
+            color: lightsteelblue;
         }
 
         .button {
@@ -67,7 +131,7 @@
 
         @media screen and (max-width: 650px) {
             .column {
-                width: 100%;
+                width: 90%;
                 display: block;
             }
         }
@@ -75,51 +139,62 @@
 </head>
 <body>
 
-    <div class="about-section">
-        <h1>About Us</h1>
-        <h3>Connecting Vendors</h3>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p>
-    </div>
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <img src="images/websiteicon.jpg" class="logob" />
+            <ul>
+                <li><a href="Website.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="VendorsPage.html">VENDORS</a></li>
+                <li><a href="">LOCATION</a></li>
+            </ul>
+            <div id="google_translate_element"></div>
 
-    <h2 style="text-align:center">Our Team</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <div class="container">
-                    <h2>Jane Doe</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>jane@example.com</p>
-                    <p><button class="button">Contact</button></p>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </nav>
+
+        <div class="about-section">
+            <h1>ABOUT US</h1>
+            <h3>Connecting Vendors</h3>
+            <p>This website helps people to connect to their nearest vendors.</p>
+        </div>
+    </header>
+
+        <h2 style="text-align:center">Our Team</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <h2>Firdaus Mulla</h2>
+                        <p>abc@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <h2>Vanshika Sathyan</h2>
+                        <p>pqr@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <h2>Supriya Thakur</h2>
+                        <p>xyz@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="column">
-            <div class="card">
-                <div class="container">
-                    <h2>Mike Ross</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>mike@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <div class="container">
-                    <h2>John Doe</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>john@example.com</p>
-                    <p><button class="button">Contact</button></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 </html>
