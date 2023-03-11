@@ -12,7 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Login.js"></script>
-     <!---- CSS Style ------>
+     
+    <!---- CSS Style ------>
     <style>
         body {
             color: #fff;
@@ -121,7 +122,7 @@
             <hr />
 
             <div class="form-group">
-                <input type="text" class="form-control" id="uname" placeholder="Enter Email-Id or Username" required="required" />
+                <input type="text" class="form-control" id="uname" placeholder="Enter Username" required="required" />
             </div>
 
             <div class="form-group">
@@ -133,7 +134,7 @@
 
             <div class="form-group">
                     <center>
-                        <button type="button" id="UserLogin" class="btn btn-primary btn-lg">Login</button>
+                        <button type = "button" id = "UserLogin" class="btn btn-primary btn-lg">Login</button>
                     </center>
             </div>
         </form>

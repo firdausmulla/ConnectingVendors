@@ -18,19 +18,37 @@ public partial class UserLogin : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-    }    
+    }
     [WebMethod]
-    public static string LoginRecord(string useruname, string userpwd)
+    public static int LoginRecord(string useruname, string userpwd)
     {
-        SqlConnection con = new SqlConnection(connectionstring);
-        SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE Username=@Username AND Password=@Password", con);
-        cmd.Parameters.AddWithValue("@Username", useruname);
-        cmd.Parameters.AddWithValue("@Password", userpwd);
-        con.Open();
-        SqlDataReader reader = cmd.ExecuteReader();
-        bool success = reader.Read();
-        string userprofile = success ? reader.GetString(reader.GetOrdinal("Profile")) : "";
-        con.Close();
-        return "{ \"success\": " + success.ToString().ToLower() + ", \"userprofile\": \"" + userprofile + "\" }";
+        int result = 0;
+
+        try
+        {
+            using (SqlConnection con = new SqlConnection(connectionstring))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE Username=@Username AND Password=@Password", con))
+                {
+                    cmd.Parameters.AddWithValue("@Username", useruname);
+                    cmd.Parameters.AddWithValue("@Password", userpwd);
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        result = 1; // Authentication successful
+                    }
+
+                    con.Close();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            result = -1;// Handle exception here
+        }
+
+        return result;
     }
 }

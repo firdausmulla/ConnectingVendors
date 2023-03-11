@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Custom StyleSheet -->
@@ -18,25 +17,29 @@
 
 <body>
     <!-- HEADER -->
-
     <header class="header">
         <nav>
             <img src="images/websiteicon.jpg" class="logob" />
             <ul>
                 <li><a href="Home.aspx">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="Vendors.aspx">VENDORS</a></li>
+                <li><a href="VendorsPage.aspx">VENDORS</a></li>
                 <li><a href="Location.aspx">LOCATION</a></li>
-
             </ul>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </nav>
         <!-- Intro -->
         <div class="intro">
             <h1>CONNECTING VENDORS</h1>
             <a href="#" class="btn">Connect With Your Vendor</a>
-            
         </div>
-
     </header>
 
     <!--Benefits  -->
@@ -44,17 +47,14 @@
         <div class="benefit-center box">
             <div class="benefit">
                 <span class="icon"><i class="bx bx-purchase-tag"></i></span>
-                <h4>Free Shipping</h4>
-                <span class="text">Capped at $16 per order</span>
+                <h4>Vendors On Fingertip</h4>
+                <span class="text">Search for vendors nearest to you</span>
             </div>
-
-
             <div class="benefit">
                 <span class="icon"><i class="bx bx-book-reader"></i></span>
-                <h4>10-Day Returns</h4>
-                <span class="text">Shop without any fear</span>
+                <h4>Feasiable Website</h4>
+                <span class="text">Easy to use Website</span>
             </div>
-
             <div class="benefit">
                 <span class="icon"><i class="bx bx-headphone"></i></span>
                 <h4>24/7 Support</h4>
@@ -243,26 +243,22 @@
                 </div>
                 <div class="price">---</div>
             </div>
-
         </div>
     </section>
 
     <!-----footer-------------------->
     <section id="footer">
-
         <div class="foot">
             <ul>
                 <li><a href="Home.aspx">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <!---<li><a href="">CONTACT US</a></li>--->
-
+                <li><a href="ContactUs.aspx">CONTACT US</a></li>
             </ul>
-
             <div class="social-links">
-                <a href="hij"><i class="fab fa-linkedin"></i></a>
-                <a href="efg"><i class="fab fa-behance"></i></a>
-                <a href="abc"><i class="fab fa-dribbble"></i></a>
-                <a href="xyz"><i class="fab fa-instagram"></i></a>
+                <a href="Linked IN"><i class="fab fa-linkedin"></i></a>
+                <a href="abc"><i class="fab fa-behance"></i></a>
+                <a href="xyz"><i class="fab fa-dribbble"></i></a>
+                <a href="pqr"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>

@@ -21,7 +21,7 @@
         obj.useruname = UserUname;
         obj.userpwd = UserPwd;
 
-        if (UserName.value == "" || UserEmail.value == "" || UserAddr == "" || UserState == "" || UserCity == "" || UserPno1 == "" || UserUname == "" || UserPwd == "") {
+        if (UserName.value == "" || UserEmail.value == "" || UserAddr.value == "" || UserState.value == "" || UserCity.value == "" || UserPno1.value == "" || UserUname.value == "" || UserPwd.value == "") {
             alert("Please fill all the details")
             return false;
         }
