@@ -7,7 +7,12 @@
     <meta charset="utf-8">
     <title>Connecting Vendors, Vendors Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendlogin.js"></script>
     
+    <!---- CSS Style ------>
     <style>
         body {
             color: #fff;
@@ -121,17 +126,17 @@
 </head>
 <body>
     <div class="ulogin-form">
-        <form id="form1" runat="server">
+        <form id="form1" method = " post" runat="server">
             <h2>Login</h2>
             <p>To Enter Your Shop!</p>
             <hr>
 
             <div class="form-group">
-                <input type="text" class="form-control" name="uname" placeholder="Enter Email-Id or Username" required="required">
+                <input type="text" class="form-control" id="uname" placeholder="Enter Username" required="required">
             </div>
 
             <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="Enter Password" required="required">
+                    <input type="password" class="form-control" id="password" placeholder="Enter Password" required="required">
                 </div>
 
             <div class="hint-text">Forgot Password? <a href="ForgetPassword">Click Here</a>
@@ -139,7 +144,7 @@
 
             <div class="form-group">
                     <center>
-                        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        <button type = "button" id = "VendLogin" class="btn btn-primary btn-lg">Login</button>
                     </center>
             </div>
         </form>

@@ -13,9 +13,6 @@
 
         var VendName = $('#vendname').val();
         var VendEmail = $('#vendemail').val();
-        var VendAddr = $('#vendaddr').val();
-        var VendState = $('#vstate').val();
-        var VendCity = $('#vcity').val();
         var VendPno1 = $('#vendnum1').val();
         var VendPno2 = $('#vendnum2').val();
 
@@ -33,31 +30,30 @@
         obj.spno2 = ShopPno2;
         obj.avlhrsfrm = AvlHrsFrm;
         obj.avlhrsto = AvlHrsTo;
-        obj.uname = Uname;
-        obj.pwd = Pwd;
         obj.vname = VendName;
         obj.vemail = VendEmail;
-        obj.vaddr = VendAddr;
-        obj.vstate = VendState;
-        obj.vcity = VendCity;
         obj.vpno1 = VendPno1;
         obj.vpno2 = VendPno2;
+        obj.uname = Uname;
+        obj.pwd = Pwd;
+        
 
-        if (ShopName.value == "" || ShopCatg.value == "" || ShopEmail.value == "" || ShopAddr == "" || ShopState == "" || ShopCity == "" || ShopPno1 == "" || AvlHrsFrm == "" || AvlHrsTo == "" || VendName.value == ""  || VendEmail.value == "" || VendAddr.value == "" || VendState.value == "" || VendCity.value == "" || VendPno1.value == "" || Uname == "" || Pwd == "") {
+        if (ShopName == "" || ShopCatg == "" || ShopEmail == "" || ShopAddr == "" || ShopState == "" || ShopCity == "" || ShopPno1 == "" || AvlHrsFrm == "" || AvlHrsTo == "" || VendName == "" || VendEmail == "" || VendPno1 == "" || Uname == "" || Pwd == "") {
             alert("Please fill all the details")
             return false;
         }
         else {
             $.ajax({
                 type: "POST",
-                contentType: "application/json",
                 url: "VendSignUp.aspx/InsertVendRecord",
                 data: JSON.stringify(obj),
-                datatype: "json",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
                 success: function (data) {
                     // Registration Success
                     if (data.d == '1') {
                         alert("Registered Successfully!")
+                        window.location.href = `VendorsPage.aspx?username=${obj.uname}`;
                     }
                     else {
                         alert("Registration Unsuccessful, Please try again.")

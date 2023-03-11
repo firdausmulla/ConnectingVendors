@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using System.Web.Services;
+using Microsoft.AspNetCore.Mvc;
 
 public partial class VendSignUp : System.Web.UI.Page
 {
@@ -17,7 +18,7 @@ public partial class VendSignUp : System.Web.UI.Page
 
     }
     [WebMethod]
-    public static string InsertVendRecord(string sname, string vname, string scatg, string semail, string saddr, string sstate, string scity, string spno1, string spno2, string avlhrsfrm, string avlhrsto, string vemail, string vaddr, string vstate, string vcity, string vpno1, string vpno2, string uname, string pwd)
+    public static string InsertVendRecord(string sname, string vname, string scatg, string semail, string saddr, string sstate, string scity, string spno1, string spno2, string avlhrsfrm, string avlhrsto, string vemail, string vpno1, string vpno2, string uname, string pwd)
     {
         using (SqlConnection con = new SqlConnection(connectionstring))
         {
@@ -40,19 +41,16 @@ public partial class VendSignUp : System.Web.UI.Page
                 cmd.Parameters.AddWithValue("@pwd", pwd);
                 int result = cmd.ExecuteNonQuery();
             }
-            using (SqlCommand cmd1 = new SqlCommand("INSERT INTO Vendors(VendorName, Email_Id, ResdAddr, State, City, ContactOne, ContactTwo) " +
-                                                      "VALUES(@vname, @vemail, @vaddr, @vstate, @vcity, @vpno1, @vpno2)", con))
+            using (SqlCommand cmd1 = new SqlCommand("INSERT INTO Vendors(VendorName, Email_Id, ContactOne, ContactTwo) " +
+                                                      "VALUES(@vname, @vemail, @vpno1, @vpno2)", con))
             {
-                cmd1.Parameters.AddWithValue("@vname", vname);
+                SqlParameter sqlParameter = cmd1.Parameters.AddWithValue("@vname", vname);
                 cmd1.Parameters.AddWithValue("@vemail", vemail);
-                cmd1.Parameters.AddWithValue("@vaddr", vaddr);
-                cmd1.Parameters.AddWithValue("@vstate", vstate);
-                cmd1.Parameters.AddWithValue("@vcity", vcity);
                 cmd1.Parameters.AddWithValue("@vpno1", vpno1);
                 cmd1.Parameters.AddWithValue("@vpno2", vpno2);
                 int result1 = cmd1.ExecuteNonQuery();
             }
         }
-        return "Records inserted successfully";
+        return "";
     }
 }
