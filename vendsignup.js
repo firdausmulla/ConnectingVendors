@@ -16,7 +16,7 @@
         var VendPno1 = $('#vendnum1').val();
         var VendPno2 = $('#vendnum2').val();
 
-        var Uname = $('#venduname').val();
+        var VendUname = $('#venduname').val();
         var Pwd = $('#password').val();
 
         var obj = {};
@@ -34,12 +34,11 @@
         obj.vemail = VendEmail;
         obj.vpno1 = VendPno1;
         obj.vpno2 = VendPno2;
-        obj.uname = Uname;
+        obj.uname = VendUname;
         obj.pwd = Pwd;
-        
 
-        if (ShopName == "" || ShopCatg == "" || ShopEmail == "" || ShopAddr == "" || ShopState == "" || ShopCity == "" || ShopPno1 == "" || AvlHrsFrm == "" || AvlHrsTo == "" || VendName == "" || VendEmail == "" || VendPno1 == "" || Uname == "" || Pwd == "") {
-            alert("Please fill all the details")
+        if (ShopName == "" || ShopCatg == "" || ShopEmail == "" || ShopAddr == "" || ShopState == "" || ShopCity == "" || ShopPno1 == "" || AvlHrsFrm == "" || AvlHrsTo == "" || VendName == "" || VendUname == "" || Pwd == "") {
+            alert("Please fill all the details");
             return false;
         }
         else {
@@ -51,15 +50,15 @@
                 dataType: "json",
                 success: function (data) {
                     // Registration Success
-                    if (data.d == '1') {
-                        alert("Registered Successfully!")
-                        window.location.href = `VendorsPage.aspx?username=${obj.uname}`;
+                    if (data.d == '') {
+                        alert("Registered Successfully!");
+                        window.location.href = "VendorsHandle.aspx?VendUname=" + VendUname;
                     }
                     else {
-                        alert("Registration Unsuccessful, Please try again.")
+                        alert("Registration Unsuccessful, Please try again.");
                     }
                 }
-            })
+            });
         }
-    })
-})
+    });
+});

@@ -1,0 +1,129 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    color: #213feeff;
+}
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+    .navbar-inverse .navbar-brand {
+        padding: 5px;
+        color: #000;
+    }
+
+.logob {
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ff6a00;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.2;
+
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+    color: #213feeff;
+}
+
+    .carousel-caption h2 {
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #a39c9c;
+    }
+
+        .carousel-caption h2 span {
+            color: #EDBB00;
+        }
+
+    .carousel-caption a {
+        background: #EDBB00;
+        padding: 15px 35px;
+        display: inline-block;
+        color: #000;
+        text-transform: uppercase;
+        border-radius: 25px;
+    }
+
+.carousel-control.right {
+    background-image: none;
+    color: cadetblue;
+}
+
+.carousel-control.left {
+    background-image: none;
+    color: cadetblue;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+    border-color: #ffd800;
+}
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+        color: #000;
+    }
+
+        .carousel-caption h2 {
+            font-size: 50px;
+        }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        padding: 5px;
+    }
+
+    .navbar-collapse {
+        background: rgba(0,0,0,0);
+    }
+
+    .carousel-caption {
+        padding-bottom: 120px;
+        color: #213feeff;
+    }
+
+        .carousel-caption h2 {
+            font-size: 25px;
+        }
+
+        .carousel-caption h3 {
+            font-size: 18px;
+            color: #213feeff;
+        }
+
+        .carousel-caption a {
+            padding: 10px 25px;
+            
+        }
+}
