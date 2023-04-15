@@ -4,29 +4,33 @@
 <html lang="en" runat="server">
 <head>
     <meta charset="utf-8">
-    <title>Vendors Registration</title>
+    <title>Vendor's Registration</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="vendsignup.js"></script>
-    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="Translate.js"></script>
+    <!--Translate Link-->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="Translate.js"></script>
     <!--Css Style --->
     <style>
         body {
             color: #fff;
-            background: #000000;
-            font-family: 'Roboto', sans-serif;
+            background: #fff;
+            font-family: 'Poppins', sans-serif;
         }
 
         .form-control {
             height: 41px;
-            background: #f2f2f2;
-            box-shadow: none !important;
-            border: none;
+            background: #fff;
+            box-shadow: #3598dc;
+            border: 2px;
         }
 
             .form-control:focus {
-                background: #e2e2e2;
+                background: #61b6f0ae;
             }
 
         .form-control, .btn {
@@ -42,12 +46,12 @@
                 color: #999;
                 border-radius: 3px;
                 margin-bottom: 15px;
-                background: #fff;
-                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                background: #fab788;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
                 padding: 30px;
             }
 
-            .signup-form h2 {
+            .signup-form h1 {
                 color: #333;
                 font-weight: bold;
                 margin-top: 0;
@@ -67,16 +71,18 @@
 
             .signup-form .row div:first-child {
                 padding-right: 20px;
+                color: dimgrey;
             }
 
             .signup-form .row div:last-child {
                 padding-left: 20px;
+                color: dimgrey;
             }
 
             .signup-form .btn {
                 font-size: 16px;
                 font-weight: bold;
-                background: #3598dc;
+                background: #ffd800;
                 border: none;
                 min-width: 140px;
             }
@@ -87,7 +93,7 @@
                 }
 
             .signup-form a {
-                color: #fff;
+                color: #3598dc;
                 text-decoration: underline;
             }
 
@@ -107,6 +113,7 @@
             .signup-form .hint-text {
                 padding-bottom: 25px;
                 text-align: center;
+                background: #fab788;
             }
     </style>
 
@@ -114,8 +121,8 @@
 <body>
     <div class="signup-form">
         <form id="form1" runat="server">
-            <h2>Register Your Shop</h2>
-            <p>And Become our Member Vendor!</p>
+            <h1>Register Your Shop</h1>
+            <h4><p style="color:dimgrey;">And Become our Member Vendor!</p></h4>
             <hr>
 
              <!----Shop Detail  ----->
@@ -138,7 +145,7 @@
             <div class="row">
                 <div class="col-md-6 mb-4">
 
-                    <select class="select" runat ="server" id="sstate" >
+                    <select class="select" runat ="server" id="sstate" required="required">
                         <option value="1">State</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option> 
                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -175,7 +182,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
 
-                    <select class="select" runat="server" id="scity">
+                    <select class="select" runat="server" id="scity" required="required">
                         <option value="1">City</option>
                         <option value="Agra">Agra</option>
                         <option value="Ahemdabad">Ahemdabad</option>
@@ -210,21 +217,22 @@
                         <option value="Tirupati">Tirupati</option>
                         <option value="Udaipur">Udaipur</option>
                         <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value ="Other">Other</option>
                         
                     </select>
                 </div>
             </div>
             <br>
-            <p> <b>Shop Contact Details: </b></p>
+            <p style="color:dimgrey;"><b>Shop Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-xs-6"><input type="number" class="form-control" id="snum1" placeholder="Phone No.1" required="required"></div>
-                        <div class="col-xs-6"><input type="number" class="form-control" id="snum2" placeholder="Phone No.2"></div>
+                        <div class="col-xs-6"><input type="text" class="form-control" id="snum1" placeholder="Phone No.1" required="required"></div>
+                        <div class="col-xs-6"><input type="text" class="form-control" id="snum2" placeholder="Phone No.2"></div>
                     </div>
                 </div>
             <div class="form-group">
                  <div class="row">
-                     <div class="col-xs-4"><p>Active Hours </p></div>
+                     <div class="col-xs-4"><p><b>Active Hours </b></p></div>
                      <div class="col-xs-4"><input type="text" class="form-control" ID="fromhrs" placeholder="From: " required="required"></div>
                      <div class="col-xs-4"><input type="text" class="form-control" ID="tohrs" placeholder="To: " required="required"></div>
                  </div>
@@ -233,9 +241,9 @@
 
             <div class="row">
                 <div class="form-group">
-                    <div class="col-xs-4"><p> Do You Provide Delivery?</p></div>
-                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox">Yes</label></div>
-                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox">No</label></div>
+                    <div class="col-xs-4"><p><b>Do You Provide Delivery?</b></p></div>
+                    <div class="col-xs-4"><label class="checkbox-inline"><input type="checkbox">Yes</label></div>
+                    <div class="col-xs-4"><label class="checkbox-inline"><input type="checkbox">No</label></div>
                     </div>
                 </div>
 
@@ -247,14 +255,14 @@
             </div>
 
             <div class="form-group">
-                <input type="email" class="form-control" id="vendemail" placeholder="Your Email-Id" required="required">
+                <input type="email" class="form-control" id="vendemail" placeholder="Your Email-Id">
             </div>
 
                <br>
-            <p> <b>Your Contact Details: </b></p>
+            <p style="color:dimgrey;"> <b>Your Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-xs-6"><input type="text" class="form-control" id="vendnum1" placeholder="Phone No.1" required="required"></div>
+                        <div class="col-xs-6"><input type="text" class="form-control" id="vendnum1" placeholder="Phone No.1"></div>
                         <div class="col-xs-6"><input type="text" class="form-control" id="vendnum2" placeholder="Phone No.2"></div>
                     </div>
                 </div>
@@ -290,7 +298,7 @@
                     </center>
                 </div>
 </form>
-        <div class="hint-text">Already have an account? <br><a href="VendLogin.aspx">Login</a>
+        <div class="hint-text"><b>Already have an account?</b><br><a href="VendLogin.aspx">Login</a>
         </div>
     </div>
 </body>

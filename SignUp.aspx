@@ -5,28 +5,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connecting Vendors</title>
+    <title>User's Sign Up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="signup.js"></script>
+    <!--Translate Link--->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="Translate.js"></script>
     <!---- CSS Style ------>
     <style>
         body {
             color: #fff;
-            background: #2389cd;
-            font-family: 'Roboto', sans-serif;
+            background-image: url(https://neokyo.com/img/opengraph/Neokyo_How-to-buy.jpg);
+            background-position: center center;
+            background-repeat:no-repeat;
+            font-family: 'Poppins', sans-serif;
         }
 
         .form-control {
             height: 41px;
-            background: #f2f2f2;
+            background: #fff;
             box-shadow: #3598dc;
             border: 2px;
         }
 
             .form-control:focus {
-                background: #e2e2e2;
+                background: #61b6f0ae;
             }
 
         .form-control, .btn {
@@ -42,12 +47,12 @@
                 color: #999;
                 border-radius: 3px;
                 margin-bottom: 15px;
-                background: #fff;
-                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                background: #fab788;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
                 padding: 30px;
             }
 
-            .signup-form h2 {
+            .signup-form h1 {
                 color: #333;
                 font-weight: bold;
                 margin-top: 0;
@@ -67,17 +72,19 @@
 
             .signup-form .row div:first-child {
                 padding-right: 10px;
+                color: dimgrey;
             }
 
             .signup-form .row div:last-child {
                 padding-left: 10px;
+                color: dimgrey;
             }
 
             .signup-form .btn {
                 font-size: 16px;
                 font-weight: bold;
-                background: #3598dc;
-                border: none;
+                background: #ffd800;
+                border: 50px;
                 min-width: 140px;
             }
 
@@ -87,7 +94,7 @@
                 }
 
             .signup-form a {
-                color: #fff;
+                color: #3598dc;
                 text-decoration: underline;
             }
 
@@ -107,6 +114,7 @@
             .signup-form .hint-text {
                 padding-bottom: 15px;
                 text-align: center;
+                background: #fab788;
             }
     </style>
 </head>
@@ -114,8 +122,8 @@
 <body>
     <div class="signup-form">
         <form id="form1" method="post" runat="server">
-            <h2>Sign Up</h2>
-            <p>To create your account</p>
+            <h1>Sign Up</h1>
+            <h4 style= "color:dimgrey;">To create your account</h4>
             <hr>
 
             <div class="form-group">
@@ -204,12 +212,13 @@
                         <option value="Tirupati">Tirupati</option>
                         <option value="Udaipur">Udaipur</option>
                         <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Other">Other</option>
                         
                     </select>
                 </div>
             </div>
                <br>
-            <p> <b>Contact Details: </b></p>
+            <p style="color:dimgrey;"><b>Contact Details: </b></p>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-6"><input type="text" class="form-control" runat="server" name="num1" id="pno1" placeholder="Phone No.1" required="required"></div>
@@ -251,10 +260,8 @@
                         <button type="button" id= "UserSignup" class="btn btn-primary btn-lg">Sign Up</button>
                     </center>
                 </div>
-            
-
 </form>
-        <div class="hint-text">Already have an account? <br><a href="UserLogin.aspx">Login</a>
+        <div class="hint-text"><b>Already have an account?</b> <br><a href="UserLogin.aspx">Login</a>
         </div>
     </div>
     

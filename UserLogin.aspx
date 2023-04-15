@@ -6,7 +6,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Connecting Vendors Login</title>
+    <title>User's Login</title>
+    <!--Translate Link-->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="Translate.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,19 +20,21 @@
     <style>
         body {
             color: #fff;
-            background: #2389cd;
-            font-family: 'Roboto', sans-serif;
+            background-image: url(https://neokyo.com/img/opengraph/Neokyo_How-to-buy.jpg);
+            background-position: center center;
+            background-repeat:no-repeat;
+            font-family: 'Poppins', sans-serif;
         }
 
         .form-control {
             height: 41px;
-            background: #f2f2f2;
+            background: #fff;
             box-shadow: #3598dc;
             border: 2px;
         }
 
             .form-control:focus {
-                background: #e2e2e2;
+                background: #61b6f0ae;
             }
 
         .form-control, .btn {
@@ -45,12 +50,12 @@
                 color: #999;
                 border-radius: 3px;
                 margin-bottom: 15px;
-                background: #fff;
-                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+                background: #fab788;
+                box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
                 padding: 30px;
             }
 
-            .ulogin-form h2 {
+            .ulogin-form h1 {
                 color: #333;
                 font-weight: bold;
                 margin-top: 0;
@@ -70,16 +75,18 @@
 
             .ulogin-form .row div:first-child {
                 padding-right: 10px;
+                color: dimgrey;
             }
 
             .ulogin-form .row div:last-child {
                 padding-left: 10px;
+                color: dimgrey;
             }
 
             .ulogin-form .btn {
                 font-size: 16px;
                 font-weight: bold;
-                background: #3598dc;
+                background: #ffd800;
                 border: none;
                 min-width: 140px;
             }
@@ -90,7 +97,7 @@
                 }
 
             .ulogin-form a {
-                color: #fff;
+                color: #3598dc;
                 text-decoration: underline;
             }
                 
@@ -110,6 +117,7 @@
             .ulogin-form .hint-text {
                 padding-bottom: 15px;
                 text-align: center;
+                background: #fab788;
             }
 
     </style>
@@ -117,8 +125,8 @@
 <body>
     <div class="ulogin-form">
         <form id="form1"  method="post" runat="server">
-            <h2>Login</h2>
-            <p>Sign into your account</p>
+            <h1>Login</h1>
+            <h4 style= "color:dimgrey;">Sign into your account</h4>
             <hr />
 
             <div class="form-group">
@@ -129,16 +137,13 @@
                     <input type="password" class="form-control" id="password" placeholder="Enter Password" required="required" />
                 </div>
 
-            <div class="hint-text">Forgot Password? <a href="ForgetPassword">Click Here</a>
-            </div>
-
             <div class="form-group">
                     <center>
                         <button type = "button" id = "UserLogin" class="btn btn-primary btn-lg">Login</button>
                     </center>
             </div>
         </form>
-            <div class="hint-text">Don't have an account? <br /><a href="SignUp.aspx">Sign Up</a>
+            <div class="hint-text"><b>Don't have an account?</b><br /><a href="SignUp.aspx">Sign Up</a>
         </div>
     </div>
 </body>

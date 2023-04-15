@@ -21,7 +21,7 @@
                 success: function (data) {
                     if (data.d == '1') {
                         alert("Login Successful!");
-                        window.location.href = "VendorsPage.aspx?username=" + userUname;
+                        window.location.href = "VendorsHandle.aspx?vendname=" + userUname;
                     } else {
                         alert("Invalid username or password, please try again.");
                     }

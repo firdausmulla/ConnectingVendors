@@ -23,7 +23,7 @@ public partial class VendSignUp : System.Web.UI.Page
         using (SqlConnection con = new SqlConnection(connectionstring))
         {
             con.Open();
-            using (SqlCommand cmd = new SqlCommand("INSERT INTO Shop(ShopName, VendorName, ShopCategory, Email_Id, Address, State, City, ContactOne, ContactTwo, AvailableHoursFrom, AvailableHoursTo, Username, Password) " +
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO Shop(ShopName, VendorName, ShopCategory, Email_Id, Address, State, City, Contact1, Contact2, OpenTime, CloseTime, Username, Password) " +
                                                      "VALUES(@sname, @vname, @scatg, @semail, @saddr, @sstate, @scity, @spno1, @spno2, @avlhrsfrm, @avlhrsto, @uname, @pwd)", con))
             {
                 cmd.Parameters.AddWithValue("@sname", sname);
@@ -41,10 +41,11 @@ public partial class VendSignUp : System.Web.UI.Page
                 cmd.Parameters.AddWithValue("@pwd", pwd);
                 int result = cmd.ExecuteNonQuery();
             }
-            using (SqlCommand cmd1 = new SqlCommand("INSERT INTO Vendors(VendorName, Email_Id, ContactOne, ContactTwo) " +
-                                                      "VALUES(@vname, @vemail, @vpno1, @vpno2)", con))
+            using (SqlCommand cmd1 = new SqlCommand("INSERT INTO Vendors(VendorName, ShopName, Email_Id, Contact1, Contact2) " +
+                                                      "VALUES(@vname, @sname, @vemail, @vpno1, @vpno2)", con))
             {
-                SqlParameter sqlParameter = cmd1.Parameters.AddWithValue("@vname", vname);
+                cmd1.Parameters.AddWithValue("@vname", vname);
+                cmd1.Parameters.AddWithValue("@sname", sname);
                 cmd1.Parameters.AddWithValue("@vemail", vemail);
                 cmd1.Parameters.AddWithValue("@vpno1", vpno1);
                 cmd1.Parameters.AddWithValue("@vpno2", vpno2);
