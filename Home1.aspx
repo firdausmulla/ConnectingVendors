@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Connecting Vendors</title>
+    <title>Vendor's Place</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet" />
@@ -29,11 +29,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Home1.aspx">HOME</a></li>
+                        <li><a href="Home1.aspx" class="active">HOME</a></li>
                         <li><a href="aboutus.html">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
                         <li><a href="VendorsPage.aspx">VENDORS</a></li>
                         <li><a href="Location.aspx">LOCATION</a></li>
+                        <li><a href="VendSignUp.aspx">Become a Vendor</a></li>
                         <li><p><a href="SignUp.aspx">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;</p></li>
                         <li><div id="google_translate_element"></div></li>
                     </ul>
