@@ -29,11 +29,10 @@
             <img src="images/websiteicon.jpg" class="logob" />
             <ul>
                 <li><a href="Home1.aspx">HOME</a></li>
-                        <li><a href="aboutus.html">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="VendorsPage.aspx" class="active">VENDORS</a></li>
-                        <li><a href="Location.aspx">LOCATION</a></li>
-                        <li><a href="VendSignUp.aspx">Become a Vendor</a></li>   
+                <li><a href="aboutus.aspx">ABOUT US</a></li>
+                <li><a href="VendorsPage.aspx" class="active">VENDORS</a></li>
+                <li><a href="Location.aspx">LOCATION</a></li>
+                <li><a href="VendSignUp.aspx">Become a Vendor</a></li>   
             </ul>
         <div id="google_translate_element"></div>
         </nav>
