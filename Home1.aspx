@@ -30,8 +30,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="Home1.aspx" class="active">HOME</a></li>
-                        <li><a href="aboutus.html">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="aboutus.aspx">ABOUT US</a></li>
                         <li><a href="VendorsPage.aspx">VENDORS</a></li>
                         <li><a href="Location.aspx">LOCATION</a></li>
                         <li><a href="VendSignUp.aspx">Become a Vendor</a></li>

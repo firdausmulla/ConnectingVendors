@@ -1,8 +1,15 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="aboutus.aspx.cs" Inherits="aboutus" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="Translate.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
         html {
             box-sizing: border-box;
         }
@@ -10,6 +17,7 @@
         *, *:before, *:after {
             box-sizing: inherit;
         }
+
         body {
             font-family: "Poppins", sans-serif;
             font-size: 18px;
@@ -79,6 +87,7 @@
                 cursor: pointer;
             }
         }
+
         .column {
             float: left;
             width: 33.3%;
@@ -97,6 +106,14 @@
             background-color: #95A9EE;
             color: white;
         }
+
+        .mydiv {
+            background-image: url(../images/aboutusimage.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+
 
         .container {
             padding: 0 16px;
@@ -138,16 +155,16 @@
     </style>
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="header">
+    <form id="form1" runat="server">
+        <header class="header">
         <nav>
             <img src="images/websiteicon.jpg" class="logob" />
             <ul>
-                <li><a href="Website.html">HOME</a></li>
+                <li><a href="Home1.aspx">HOME</a></li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="VendorsPage.html">VENDORS</a></li>
-                <li><a href="">LOCATION</a></li>
+                <li><a href="VendorsPage.aspx" class="active">VENDORS</a></li>
+                <li><a href="Location.aspx">LOCATION</a></li>
+                <li><a href="VendSignUp.aspx">Become a Vendor</a></li>
             </ul>
             <div id="google_translate_element"></div>
 
@@ -161,40 +178,46 @@
 
         <div class="about-section">
             <h1>ABOUT US</h1>
-            <h3>Connecting Vendors</h3>
+            <h3>Vendor's Place</h3>
             <p>This website helps people to connect to their nearest vendors.</p>
+            <p>This platform makes it simpler for customers to find the things they require, while also assisting sellers to become more visible and reach a bigger audience. Users may conveniently look for vendors and items while on the go. It aims to simplify the process of connecting buyers and vendors, making it easier for both parties to find each other and conduct business.</p>
+        </div>
+        <div class="mydiv">
+            <p>
+
+            </p>
         </div>
     </header>
 
-        <h2 style="text-align:center">Our Team</h2>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <div class="container">
-                        <h2>Firdaus Mulla</h2>
-                        <p>abc@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="container">
-                        <h2>Vanshika Sathyan</h2>
-                        <p>pqr@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="container">
-                        <h2>Supriya Thakur</h2>
-                        <p>xyz@gmail.com</p>
-                    </div>
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Firdaus Mulla</h2>
+                    <p>firdausmulla@gmail.com</p>
                 </div>
             </div>
         </div>
 
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Vanshika Sathyan</h2>
+                    <p>vs25052001@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2>Supriya Thakur</h2>
+                    <p>supriyathakur@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
 </body>
 </html>

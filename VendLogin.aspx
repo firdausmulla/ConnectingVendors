@@ -120,7 +120,7 @@
 <body>
     <div class="ulogin-form">
         <form id="form1" method = " post" runat="server">
-            <h1>Login</h1>
+            <h1>Vendor Login</h1>
             <h4 style= "color:dimgrey;">To Enter Your Shop!</h4>
             <hr>
 
