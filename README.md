@@ -1,4 +1,135 @@
-# ConnectingVendors
-•	Developed a vendor connectivity platform, improving service access and visibility.
-•	Applied front-end and back-end skills in web development.
-•	Demonstrated coordination and technical execution.
+# Vendor’s Place – Web-Based Vendor Discovery Platform
+
+## Overview
+Vendor’s Place is a web-based platform designed to bridge the gap between local vendors (hawkers, small shops) and buyers by providing real-time information about vendor availability, products and locations.  
+The platform helps users easily find nearby vendors and enables vendors to gain online visibility.
+
+This project was developed as part of **T.Y.B.Sc. Computer Science (Semester VI)** under **HSNC University, Mumbai**.
+
+---
+
+## Objectives
+- Help buyers find vendors selling specific products nearby
+- Provide vendors with an online presence
+- Enable real-time vendor discovery and location tracking
+- Support multiple languages for wider accessibility
+- Simplify vendor–customer interaction
+
+---
+
+## Problem Statement
+Local vendors often lack digital visibility, making it difficult for buyers to locate them or know product availability. Vendor’s Place solves this by offering a centralized platform that connects buyers and vendors efficiently.
+
+---
+
+## Technology Stack
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+### Backend
+- ASP.NET (C#)
+
+### Database
+- SQL Server
+
+### Tools
+- Visual Studio
+- Git & GitHub
+
+---
+
+##  User Roles
+### Admin
+- Manage vendors, users, and shops
+- View analytics (vendors, users, shops)
+- Update or delete records
+
+### Vendor
+- Register and log in
+- Manage shop details
+- Manage inventory
+
+### User
+- Register and log in
+- Search for vendors/products
+- View vendor locations on map
+
+---
+
+## Key Features
+- Vendor & user authentication
+- Vendor listing and inventory management
+- Location-based vendor search (Google Maps integration)
+- Multi-language support (English, Hindi, Marathi, etc.)
+- Admin dashboard with analytics
+- Responsive UI design
+
+---
+
+## Project Structure
+
+Vendor-Place/
+├── Admin/
+├── User/
+├── Vendor/
+├── Database/
+├── Assets/
+├── README.md
+
+---
+
+## Modules
+- Admin Module
+- Vendor Module
+- User Module
+- Location Module
+- Authentication Module
+- Language Translation Module
+
+---
+
+## Database Design
+Entities include:
+- Users
+- Vendors
+- Shops
+- Locations
+- Shop Items
+
+(Relational structure designed using ER diagrams)
+
+---
+
+## Testing
+- Functional Testing
+- User Authentication Testing
+- Module-wise Validation
+- UI & Usability Testing
+
+---
+
+## Future Enhancements
+- Payment gateway integration
+- Real-time inventory tracking
+- Delivery service integration
+- Machine-learning based recommendations
+- Social media integration
+- Enhanced multilingual support
+
+---
+
+## Contributors
+- Vanshika Sathyan  
+- Firdaus Mulla  
+- Supriya Thakur  
+
+---
+
+## Academic Details
+- Course: T.Y.B.Sc. Computer Science
+- University: HSNC University, Mumbai
+- Academic Year: 2022–2023
+- Project Guide: Mrs. Shalini Maheshgauri
