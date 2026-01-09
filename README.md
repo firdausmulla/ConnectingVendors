@@ -17,6 +17,9 @@ This project was developed as part of **T.Y.B.Sc. Computer Science (Semester VI)
 
 ---
 
+<img width="648" height="352" alt="HomePage" src="https://github.com/user-attachments/assets/4d83ec95-184c-461f-ad27-b85eb0106048" />
+
+
 ## Problem Statement
 Local vendors often lack digital visibility, making it difficult for buyers to locate them or know product availability. Vendor’s Place solves this by offering a centralized platform that connects buyers and vendors efficiently.
 
