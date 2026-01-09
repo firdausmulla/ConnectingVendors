@@ -69,18 +69,6 @@ Local vendors often lack digital visibility, making it difficult for buyers to l
 
 ---
 
-## Project Structure
-
-Vendor-Place/
-├── Admin/
-├── User/
-├── Vendor/
-├── Database/
-├── Assets/
-├── README.md
-
----
-
 ## Modules
 - Admin Module
 - Vendor Module
@@ -98,8 +86,6 @@ Entities include:
 - Shops
 - Locations
 - Shop Items
-
-(Relational structure designed using ER diagrams)
 
 ---
 
