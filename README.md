@@ -19,6 +19,17 @@ This project was developed as part of **T.Y.B.Sc. Computer Science (Semester VI)
 
 <img width="648" height="352" alt="HomePage" src="https://github.com/user-attachments/assets/4d83ec95-184c-461f-ad27-b85eb0106048" />
 
+----
+<img width="471" height="287" alt="SingUpPage" src="https://github.com/user-attachments/assets/86a30e94-9256-4db1-9dd7-3fc28789af35" />
+
+----
+<img width="486" height="246" alt="Location" src="https://github.com/user-attachments/assets/9d5140d5-4b9a-41be-950e-81bde7ceda72" />
+
+----
+<img width="478" height="261" alt="AdminPage" src="https://github.com/user-attachments/assets/dc7db030-617e-46bc-930a-0a1efdfb4bda" />
+
+
+
 
 ## Problem Statement
 Local vendors often lack digital visibility, making it difficult for buyers to locate them or know product availability. Vendor’s Place solves this by offering a centralized platform that connects buyers and vendors efficiently.
